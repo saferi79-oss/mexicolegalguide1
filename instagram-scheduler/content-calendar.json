@@ -1,0 +1,51 @@
+{
+  "weekly_plan": [
+    {
+      "day": "Monday",
+      "format": "Reel",
+      "topic": "3 Legal Mistakes Startups Make in Mexico",
+      "keyword": "STARTUP",
+      "cta": "Comment 'STARTUP' for my full guide on how to avoid these!"
+    },
+    {
+      "day": "Tuesday",
+      "format": "Story",
+      "topic": "Why Mexican IP law is different",
+      "keyword": "IP",
+      "cta": "Swipe up or DM 'IP' for the Intellectual Property guide."
+    },
+    {
+      "day": "Wednesday",
+      "format": "Carousel",
+      "topic": "Checklist for Company Formation",
+      "keyword": "SETUP",
+      "cta": "Get the checklist link in bio or comment 'SETUP'."
+    },
+    {
+      "day": "Thursday",
+      "format": "Story",
+      "topic": "Client Success Story (Fiverr testimonial)",
+      "cta": "Check our services on Fiverr (Link in Bio)."
+    },
+    {
+      "day": "Friday",
+      "format": "Reel",
+      "topic": "Hiring your first employee? Read this.",
+      "keyword": "HIRING",
+      "cta": "Comment 'HIRING' for the employment contract guide."
+    },
+    {
+      "day": "Saturday",
+      "format": "Story",
+      "topic": "Q&A Session",
+      "cta": "Ask me anything about Mexico Law."
+    },
+    {
+      "day": "Sunday",
+      "format": "Static",
+      "topic": "The 'Digital Nomad' Guide Preview",
+      "keyword": "CHECKLIST",
+      "cta": "Comment 'CHECKLIST' for the residency legal requirements PDF."
+    }
+  ]
+}

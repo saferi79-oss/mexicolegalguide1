@@ -1,0 +1,26 @@
+[
+  {
+    "id": "lead_welcome",
+    "day_delay": 0,
+    "subject": "🎁 Your Mexico Residency Checklist",
+    "body_html": "<h1>Your Free Checklist</h1><p>Hi there,</p><p>Here is your free Legal Checklist for Mexico Residency as promised.</p><p><a href='[Link]'>Download PDF</a></p>"
+  },
+  {
+    "id": "lead_value_1",
+    "day_delay": 1,
+    "subject": "Common residency mistakes to avoid",
+    "body_html": "<h1>Avoid these traps</h1><p>Did you know that applying from the wrong consulate can delay your visa by months?</p>"
+  },
+  {
+    "id": "lead_value_2",
+    "day_delay": 3,
+    "subject": "The secret to a fast permit",
+    "body_html": "<h1>Speed up the process</h1><p>Having your documents pre-apostilled is the #1 time-saver.</p>"
+  },
+  {
+    "id": "lead_sales",
+    "day_delay": 7,
+    "subject": "Ready for the full legal toolkit?",
+    "body_html": "<h1>The Complete Library</h1><p>Now that you have the checklist, get the full guides to ensure your business is protected too.</p>"
+  }
+]

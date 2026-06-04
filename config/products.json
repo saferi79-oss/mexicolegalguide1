@@ -1,0 +1,24 @@
+{
+  "business": "Mexico Legal Guide",
+  "owner": "Sabrina Fernandez",
+  "email": "mexicolegalguide@outlook.com",
+  "currency": "USD",
+  "products": [
+    { "name": "THE 7 LEGAL MISTAKES THAT DESTROY STARTUPS IN MEXICO", "permalink": "pnfxjgg", "price": 27 },
+    { "name": "Guide to Establishing Your Company in Mexico", "permalink": "jakfxl", "price": 49 },
+    { "name": "INTELLECTUAL PROPERTY FOR ENTREPRENEURS IN MEXICO", "permalink": "xatoic", "price": 37 },
+    { "name": "CONTRACT GUIDE FOR FREELANCERS & CONSULTANTS IN MEXICO", "permalink": "orxcm", "price": 35 },
+    { "name": "HOW TO HIRE CORRECTLY IN MEXICO", "permalink": "sdbag", "price": 37 },
+    { "name": "Basic Compliance for Mexican SMEs", "permalink": "bplbkc", "price": 40 }
+  ],
+  "bundles": [
+    { "name": "Founder's Essential Pack", "permalink": "to-be-created", "price": 79, "savings": 30 },
+    { "name": "Operational Compliance & Protection Pack", "permalink": "to-be-created", "price": 84, "savings": 28 },
+    { "name": "Full Library Bundle", "permalink": "to-be-created", "price": 147, "savings": 78 }
+  ],
+  "instagram": "@mexicolegalguide",
+  "carrd": "https://mexicolegalguide.carrd.co",
+  "gumroad": "https://mexicolegalguide.gumroad.com",
+  "fiverr": "https://es.fiverr.com/s/jj9Eq4G",
+  "linkedin": "https://www.linkedin.com/in/sabrina-fern%C3%A1ndez-rico-561806b9/"
+}

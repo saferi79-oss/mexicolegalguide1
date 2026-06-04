@@ -1,0 +1,26 @@
+[
+  {
+    "id": "welcome",
+    "day_delay": 0,
+    "subject": "🇲🇽 Your Mexico Legal Guide is here!",
+    "body_html": "<h1>Welcome to Mexico Legal Guide</h1><p>Hi [Customer Name],</p><p>Thank you for choosing Mexico Legal Guide! You've taken a major step toward protecting your business.</p><p>You can access your guide here: <strong>[Gumroad Download Link]</strong></p><p>Best regards,<br>Sabrina Fernandez</p>"
+  },
+  {
+    "id": "cross_sell",
+    "day_delay": 2,
+    "subject": "Quick question about your guide",
+    "body_html": "<h1>Going deeper?</h1><p>Hi [Customer Name],</p><p>I hope you've had a chance to dive into your legal guide. Many clients find that protecting their IP is the next critical step.</p><p>Use code: <strong>MEXICO20</strong> for 20% off your next guide.</p>"
+  },
+  {
+    "id": "bundle_upsell",
+    "day_delay": 5,
+    "subject": "🎁 A special upgrade for you",
+    "body_html": "<h1>The Founder's Roadmap</h1><p>Hi [Customer Name],</p><p>Upgrade to the <strong>Founder's Essential Pack</strong> today and save $30. Get the full roadmap for your business.</p>"
+  },
+  {
+    "id": "feedback",
+    "day_delay": 10,
+    "subject": "How are things going in Mexico?",
+    "body_html": "<h1>We value your feedback</h1><p>Hi [Customer Name],</p><p>Did the guide help clarify things? Reply to this email and let us know. You'll get early access to our next series!</p>"
+  }
+]
