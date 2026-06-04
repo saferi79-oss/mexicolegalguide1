@@ -1,30 +1,17 @@
-# Mexico Legal Guide - Automation System
+# Mexico Legal Guide - Automation & Marketing System
 
-This directory contains the complete automation infrastructure for the business.
+This repository contains the complete automation system, marketing strategies, and landing page for the Mexico Legal Guide project.
 
-## Structure
+## Project Structure
 
-- **/config**: Contains `products.json` with all product metadata and permalinks.
-- **/gumroad-bundler**: Node.js script to generate bundle creation instructions and links.
-- **/email-automation**: SendGrid-based system for post-purchase and lead nurturing emails.
-- **/instagram-scheduler**: Content calendar and post templates for Metricool and ManyChat.
+- `landing-page/`: Optimized web presence for guide sales.
+- `automation/`: Core automation scripts and workflows.
+    - `gumroad-bundler/`: Tools for creating and managing product bundles on Gumroad.
+    - `email-automation/`: Nurturing sequences and transactional email workflows.
+    - `instagram-scheduler/`: Content planning and scheduling for social presence.
+- `docs/`: Strategic documentation, audits, and optimization plans.
+- `config/`: System-wide configuration files and product metadata.
 
-## Quick Start (When API Keys are available)
+## Getting Started
 
-### 1. Install Dependencies
-```bash
-npm install @sendgrid/mail
-```
-
-### 2. Run Gumroad Helper
-```bash
-node gumroad-bundler/create-bundles.js
-```
-
-### 3. Test Email System
-```bash
-node email-automation/send-emails.js --key=YOUR_SENDGRID_KEY --test
-```
-
-## Maintenance
-Update `/config/products.json` whenever a new guide is published or prices change. The rest of the system will automatically adapt.
+Refer to the specific README files in each directory for detailed setup and usage instructions.
