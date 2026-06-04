@@ -1,0 +1,18 @@
+/* Custom Styles for Mexico Legal Guide */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.shadow-blue-200 {
+    shadow-color: rgba(191, 219, 254, 0.4);
+}
+
+/* Custom button hover effect */
+.hover-scale {
+    transition: transform 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+    transform: scale(1.02);
+}
