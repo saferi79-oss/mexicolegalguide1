@@ -7,29 +7,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; background-color: #0F1E3A; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .text-gold { color: #C9A84C; }
+        .bg-gold { background-color: #C9A84C; }
+        .border-gold { border-color: #C9A84C; }
+        .hover-gold:hover { color: #C9A84C; }
+        .card-dark { background-color: #132442; border-color: #1a2d50; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900" x-data="{ mobileMenuOpen: false }">
+<body class="text-white" x-data="{ mobileMenuOpen: false }">
+
+    <!-- MLG Watermark Background -->
+    <div class="fixed inset-0 flex items-center justify-center pointer-events-none opacity-5 select-none z-0">
+        <span class="font-playfair text-gold" style="font-size: 180pt;">⚖️</span>
+    </div>
 
     <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <header class="bg-[#0F1E3A]/95 border-b border-[#1a2d50] sticky top-0 z-50 backdrop-blur-sm">
         <div class="container mx-auto px-4 h-20 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 <span class="text-2xl">🇲🇽</span>
-                <span class="text-xl font-bold tracking-tight text-slate-800">Mexico Legal Guide</span>
+                <span class="text-xl font-bold tracking-tight text-gold">Mexico Legal Guide</span>
             </div>
             
-            <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-600">
-                <a href="#guides" class="hover:text-blue-600 transition">Digital Guides</a>
-                <a href="#bundles" class="hover:text-blue-600 transition">Bundles</a>
-                <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#newsletter" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition">Get Free Checklist</a>
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-300">
+                <a href="#guides" class="hover:text-gold transition">Digital Guides</a>
+                <a href="#bundles" class="hover:text-gold transition">Bundles</a>
+                <a href="#about" class="hover:text-gold transition">About</a>
+                <a href="#newsletter" class="bg-gold text-[#0F1E3A] px-5 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition">Get Free Checklist</a>
             </nav>
 
-            <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden text-slate-600">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden text-slate-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
@@ -37,112 +48,115 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div x-show="mobileMenuOpen" x-transition class="md:hidden bg-white border-t border-slate-100 p-4 space-y-4 font-semibold text-slate-600 shadow-xl">
+        <div x-show="mobileMenuOpen" x-transition class="md:hidden bg-[#132442] border-t border-[#1a2d50] p-4 space-y-4 font-semibold text-slate-300 shadow-xl">
             <a href="#guides" class="block">Digital Guides</a>
             <a href="#bundles" class="block">Bundles</a>
             <a href="#about" class="block">About</a>
-            <a href="#newsletter" class="block text-blue-600">Get Free Checklist</a>
+            <a href="#newsletter" class="block text-gold">Get Free Checklist</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="py-20 bg-white">
+    <!-- Hero / MLG Brand Section -->
+    <section class="py-20 relative z-10">
         <div class="container mx-auto px-4 text-center max-w-4xl">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-slate-900 leading-tight">
-                Navigate Mexican Law with <span class="text-blue-600">Confidence.</span>
+            <div class="mb-8">
+                <span class="font-playfair text-gold inline-block" style="font-size: 120pt; line-height: 1;">⚖️</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
+                Navigate Mexican Law with <span class="text-gold">Confidence.</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed">
+            <p class="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed">
                 Practical digital guides for founders, freelancers, and expats. Skip the expensive legal fees and get the step-by-step roadmap you need to succeed in Mexico.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#guides" class="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                <a href="#guides" class="bg-gold text-[#0F1E3A] px-8 py-4 rounded-xl text-lg font-bold hover:bg-yellow-400 transition shadow-lg">
                     View Digital Guides ↓
                 </a>
-                <a href="#newsletter" class="bg-slate-100 text-slate-700 px-8 py-4 rounded-xl text-lg font-bold hover:bg-slate-200 transition border border-slate-200">
+                <a href="#newsletter" class="bg-transparent text-slate-300 px-8 py-4 rounded-xl text-lg font-bold hover:text-gold transition border border-slate-500">
                     Get Free Residency Checklist
                 </a>
             </div>
-            <div class="mt-12 flex items-center justify-center gap-8 text-slate-400 grayscale opacity-70">
+            <div class="mt-12 flex items-center justify-center gap-8 text-slate-500">
                 <span class="font-semibold uppercase tracking-widest text-xs">As seen on</span>
-                <span class="text-xl font-bold italic">Fiverr</span>
-                <span class="text-xl font-bold">Instagram</span>
-                <span class="text-xl font-bold">LinkedIn</span>
+                <span class="text-xl font-bold italic text-slate-400">Fiverr</span>
+                <span class="text-xl font-bold text-slate-400">Instagram</span>
+                <span class="text-xl font-bold text-slate-400">LinkedIn</span>
             </div>
         </div>
     </section>
 
     <!-- Guides Section -->
-    <section id="guides" class="py-20 bg-slate-50">
+    <section id="guides" class="py-20 bg-[#0b1730] relative z-10">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">Practical Legal Roadmaps</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">Focused on business, compliance, and hiring. No fluff, just the steps you need to follow.</p>
+                <h2 class="text-3xl font-bold mb-4 text-white">Practical Legal Roadmaps</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Focused on business, compliance, and hiring. No fluff, just the steps you need to follow.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Guide 1 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all flex flex-col h-full">
-                    <div class="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">Startup Strategy</div>
-                    <h3 class="text-xl font-bold mb-4">The 7 Legal Mistakes That Destroy Startups in Mexico</h3>
-                    <p class="text-slate-600 mb-8 flex-grow">Don't let your venture fail before it starts. Learn the critical pitfalls of IP, taxes, and labor law.</p>
+                <div class="card-dark bg-[#132442] p-8 rounded-2xl border border-[#1a2d50] hover:border-gold/30 transition-all flex flex-col h-full">
+                    <div class="text-gold font-bold text-sm uppercase tracking-wider mb-4">Startup Strategy</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">The 7 Legal Mistakes That Destroy Startups in Mexico</h3>
+                    <p class="text-slate-400 mb-8 flex-grow">Don't let your venture fail before it starts. Learn the critical pitfalls of IP, taxes, and labor law.</p>
                     <div class="flex items-center justify-between mt-auto">
-                        <span class="text-2xl font-bold text-slate-900">$27</span>
-                        <a href="https://mexicolegalguide.gumroad.com/l/pnfxjgg" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg hover:bg-slate-800 transition">Buy Now →</a>
+                        <span class="text-2xl font-bold text-gold">$27</span>
+                        <a href="https://mexicolegalguide.gumroad.com/l/pnfxjgg" class="bg-gold text-[#0F1E3A] px-5 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition">Buy Now →</a>
                     </div>
                 </div>
 
                 <!-- Guide 2 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all flex flex-col h-full">
-                    <div class="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">Company Formation</div>
-                    <h3 class="text-xl font-bold mb-4">Guide to Establishing Your Company in Mexico</h3>
-                    <p class="text-slate-600 mb-8 flex-grow">The complete roadmap to choosing the right legal entity (S.A. de C.V. vs S.A.S.) and incorporating correctly.</p>
+                <div class="card-dark bg-[#132442] p-8 rounded-2xl border border-[#1a2d50] hover:border-gold/30 transition-all flex flex-col h-full">
+                    <div class="text-gold font-bold text-sm uppercase tracking-wider mb-4">Company Formation</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Guide to Establishing Your Company in Mexico</h3>
+                    <p class="text-slate-400 mb-8 flex-grow">The complete roadmap to choosing the right legal entity (S.A. de C.V. vs S.A.S.) and incorporating correctly.</p>
                     <div class="flex items-center justify-between mt-auto">
-                        <span class="text-2xl font-bold text-slate-900">$49</span>
-                        <a href="https://mexicolegalguide.gumroad.com/l/jakfxl" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg hover:bg-slate-800 transition">Buy Now →</a>
+                        <span class="text-2xl font-bold text-gold">$49</span>
+                        <a href="https://mexicolegalguide.gumroad.com/l/jakfxl" class="bg-gold text-[#0F1E3A] px-5 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition">Buy Now →</a>
                     </div>
                 </div>
 
                 <!-- Guide 3 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all flex flex-col h-full">
-                    <div class="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">Intellectual Property</div>
-                    <h3 class="text-xl font-bold mb-4">Intellectual Property for Entrepreneurs in Mexico</h3>
-                    <p class="text-slate-600 mb-8 flex-grow">Protect your brand and inventions. A complete guide to IMPI registration and enforcement.</p>
+                <div class="card-dark bg-[#132442] p-8 rounded-2xl border border-[#1a2d50] hover:border-gold/30 transition-all flex flex-col h-full">
+                    <div class="text-gold font-bold text-sm uppercase tracking-wider mb-4">Intellectual Property</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Intellectual Property for Entrepreneurs in Mexico</h3>
+                    <p class="text-slate-400 mb-8 flex-grow">Protect your brand and inventions. A complete guide to IMPI registration and enforcement.</p>
                     <div class="flex items-center justify-between mt-auto">
-                        <span class="text-2xl font-bold text-slate-900">$37</span>
-                        <a href="https://mexicolegalguide.gumroad.com/l/xatoic" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg hover:bg-slate-800 transition">Buy Now →</a>
+                        <span class="text-2xl font-bold text-gold">$37</span>
+                        <a href="https://mexicolegalguide.gumroad.com/l/xatoic" class="bg-gold text-[#0F1E3A] px-5 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition">Buy Now →</a>
                     </div>
                 </div>
 
                 <!-- Guide 4 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all flex flex-col h-full">
-                    <div class="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">Independent Professional</div>
-                    <h3 class="text-xl font-bold mb-4">Contract Guide for Freelancers & Consultants</h3>
-                    <p class="text-slate-600 mb-8 flex-grow">Bulletproof your services. Templates and clauses designed for independent professionals in Mexico.</p>
+                <div class="card-dark bg-[#132442] p-8 rounded-2xl border border-[#1a2d50] hover:border-gold/30 transition-all flex flex-col h-full">
+                    <div class="text-gold font-bold text-sm uppercase tracking-wider mb-4">Independent Professional</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Contract Guide for Freelancers & Consultants</h3>
+                    <p class="text-slate-400 mb-8 flex-grow">Bulletproof your services. Templates and clauses designed for independent professionals in Mexico.</p>
                     <div class="flex items-center justify-between mt-auto">
-                        <span class="text-2xl font-bold text-slate-900">$35</span>
-                        <a href="https://mexicolegalguide.gumroad.com/l/orxcm" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg hover:bg-slate-800 transition">Buy Now →</a>
+                        <span class="text-2xl font-bold text-gold">$35</span>
+                        <a href="https://mexicolegalguide.gumroad.com/l/orxcm" class="bg-gold text-[#0F1E3A] px-5 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition">Buy Now →</a>
                     </div>
                 </div>
 
                 <!-- Guide 5 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all flex flex-col h-full">
-                    <div class="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">Labor Law</div>
-                    <h3 class="text-xl font-bold mb-4">How to Hire Correctly in Mexico</h3>
-                    <p class="text-slate-600 mb-8 flex-grow">Understand Mexican labor law (LFT), social security (IMSS), and how to avoid costly lawsuits.</p>
+                <div class="card-dark bg-[#132442] p-8 rounded-2xl border border-[#1a2d50] hover:border-gold/30 transition-all flex flex-col h-full">
+                    <div class="text-gold font-bold text-sm uppercase tracking-wider mb-4">Labor Law</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">How to Hire Correctly in Mexico</h3>
+                    <p class="text-slate-400 mb-8 flex-grow">Understand Mexican labor law (LFT), social security (IMSS), and how to avoid costly lawsuits.</p>
                     <div class="flex items-center justify-between mt-auto">
-                        <span class="text-2xl font-bold text-slate-900">$37</span>
-                        <a href="https://mexicolegalguide.gumroad.com/l/sdbag" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg hover:bg-slate-800 transition">Buy Now →</a>
+                        <span class="text-2xl font-bold text-gold">$37</span>
+                        <a href="https://mexicolegalguide.gumroad.com/l/sdbag" class="bg-gold text-[#0F1E3A] px-5 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition">Buy Now →</a>
                     </div>
                 </div>
 
                 <!-- Guide 6 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all flex flex-col h-full">
-                    <div class="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">Compliance</div>
-                    <h3 class="text-xl font-bold mb-4">Basic Compliance for Mexican SMEs</h3>
-                    <p class="text-slate-600 mb-8 flex-grow">Stay on the right side of the SAT and other authorities with our monthly compliance checklist.</p>
+                <div class="card-dark bg-[#132442] p-8 rounded-2xl border border-[#1a2d50] hover:border-gold/30 transition-all flex flex-col h-full">
+                    <div class="text-gold font-bold text-sm uppercase tracking-wider mb-4">Compliance</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Basic Compliance for Mexican SMEs</h3>
+                    <p class="text-slate-400 mb-8 flex-grow">Stay on the right side of the SAT and other authorities with our monthly compliance checklist.</p>
                     <div class="flex items-center justify-between mt-auto">
-                        <span class="text-2xl font-bold text-slate-900">$40</span>
-                        <a href="https://mexicolegalguide.gumroad.com/l/bplbkc" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg hover:bg-slate-800 transition">Buy Now →</a>
+                        <span class="text-2xl font-bold text-gold">$40</span>
+                        <a href="https://mexicolegalguide.gumroad.com/l/bplbkc" class="bg-gold text-[#0F1E3A] px-5 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition">Buy Now →</a>
                     </div>
                 </div>
             </div>
@@ -150,63 +164,62 @@
     </section>
 
     <!-- Bundles Section -->
-    <section id="bundles" class="py-20 bg-white">
+    <section id="bundles" class="py-20 bg-[#0F1E3A] relative z-10">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">Save with Curated Bundles</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">Get everything you need for your specific situation at a significant discount.</p>
+                <h2 class="text-3xl font-bold mb-4 text-white">Save with Curated Bundles</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Get everything you need for your specific situation at a significant discount.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 <!-- Bundle A -->
-                <div class="relative bg-slate-900 text-white p-10 rounded-3xl overflow-hidden">
-                    <div class="absolute top-6 right-6 bg-blue-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">30% Discount</div>
+                <div class="relative bg-[#132442] border border-[#1a2d50] text-white p-10 rounded-3xl overflow-hidden">
+                    <div class="absolute top-6 right-6 bg-gold text-[#0F1E3A] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">30% Discount</div>
                     <h3 class="text-2xl font-bold mb-6">Founder's Essential Pack</h3>
                     <ul class="space-y-4 mb-10 text-slate-400">
                         <li class="flex items-start gap-3">
-                            <span class="text-blue-500 font-bold">✓</span>
+                            <span class="text-gold font-bold">✓</span>
                             <span>Guide to Establishing Your Company in Mexico</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="text-blue-500 font-bold">✓</span>
+                            <span class="text-gold font-bold">✓</span>
                             <span>The 7 Legal Mistakes That Destroy Startups</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="text-blue-500 font-bold">✓</span>
+                            <span class="text-gold font-bold">✓</span>
                             <span>Intellectual Property for Entrepreneurs</span>
                         </li>
                     </ul>
                     <div class="flex items-end gap-3 mb-8">
-                        <span class="text-4xl font-bold">$79</span>
+                        <span class="text-4xl font-bold text-gold">$79</span>
                         <span class="text-slate-500 line-through text-lg">$113</span>
                     </div>
-                    <a href="#" class="block text-center bg-white text-slate-900 font-bold py-4 rounded-xl hover:bg-slate-200 transition">Get Started Now</a>
+                    <a href="#" class="block text-center bg-gold text-[#0F1E3A] font-bold py-4 rounded-xl hover:bg-yellow-400 transition">Get Started Now</a>
                 </div>
 
                 <!-- Bundle B -->
-                <div class="relative bg-white border border-slate-200 p-10 rounded-3xl overflow-hidden shadow-lg">
-                    <div class="absolute top-6 right-6 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
-                    <h3 class="text-2xl font-bold mb-6">The Complete Business Vault</h3>
-                    <p class="text-slate-600 mb-6">Total legal protection for your Mexican enterprise. Includes all 6 current guides + future updates.</p>
+                <div class="relative bg-[#132442] border border-[#1a2d50] p-10 rounded-3xl overflow-hidden shadow-lg">
+                    <div class="absolute top-6 right-6 bg-gold text-[#0F1E3A] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+                    <h3 class="text-2xl font-bold mb-6 text-white">The Complete Business Vault</h3>
+                    <p class="text-slate-400 mb-6">Total legal protection for your Mexican enterprise. Includes all 6 current guides + future updates.</p>
                     <div class="flex items-end gap-3 mb-8">
-                        <span class="text-4xl font-bold text-slate-900">$147</span>
-                        <span class="text-slate-400 line-through text-lg">$225</span>
+                        <span class="text-4xl font-bold text-gold">$147</span>
+                        <span class="text-slate-500 line-through text-lg">$225</span>
                     </div>
-                    <a href="#" class="block text-center bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition">Unlock Entire Vault</a>
+                    <a href="#" class="block text-center bg-gold text-[#0F1E3A] font-bold py-4 rounded-xl hover:bg-yellow-400 transition">Unlock Entire Vault</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Lead Magnet / Newsletter -->
-    <section id="newsletter" class="py-20 bg-blue-600">
-        <div class="container mx-auto px-4 max-w-4xl bg-white rounded-3xl p-12 shadow-2xl relative overflow-hidden">
-            <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-50 rounded-full opacity-50"></div>
+    <section id="newsletter" class="py-20 bg-[#0b1730] relative z-10">
+        <div class="container mx-auto px-4 max-w-4xl bg-[#132442] rounded-3xl p-12 shadow-2xl relative overflow-hidden border border-[#1a2d50]">
             <div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
-                    <span class="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4 block">Free Resource</span>
-                    <h2 class="text-3xl font-bold mb-4">Mexico Residency & Visa Checklist (2024)</h2>
-                    <p class="text-slate-600 mb-6 leading-relaxed">Join 500+ expats and founders receiving our monthly legal breakdown and early bird discounts on new guides.</p>
+                    <span class="text-gold font-bold text-sm uppercase tracking-wider mb-4 block">Free Resource</span>
+                    <h2 class="text-3xl font-bold mb-4 text-white">Mexico Residency & Visa Checklist (2024)</h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">Join 500+ expats and founders receiving our monthly legal breakdown and early bird discounts on new guides.</p>
                     <ul class="space-y-2 text-slate-500 text-sm mb-8">
                         <li>• 2024 Financial Requirements summary.</li>
                         <li>• Step-by-step Consulate interview prep.</li>
@@ -215,37 +228,35 @@
                 </div>
                 <div class="md:w-1/2 w-full">
                     <form action="#" class="space-y-4">
-                        <input type="email" placeholder="your@email.com" class="w-full px-6 py-4 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" required>
-                        <button type="submit" class="w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition shadow-lg">
+                        <input type="email" placeholder="your@email.com" class="w-full px-6 py-4 rounded-xl bg-[#0F1E3A] border border-[#1a2d50] text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition" required>
+                        <button type="submit" class="w-full bg-gold text-[#0F1E3A] font-bold py-4 rounded-xl hover:bg-yellow-400 transition shadow-lg">
                             Download Checklist for Free
                         </button>
                     </form>
-                    <p class="text-center text-xs text-slate-400 mt-4 italic">No spam. Only legal value. Unsubscribe anytime.</p>
+                    <p class="text-center text-xs text-slate-500 mt-4 italic">No spam. Only legal value. Unsubscribe anytime.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-slate-50">
+    <section id="about" class="py-20 bg-[#0F1E3A] relative z-10">
         <div class="container mx-auto px-4 max-w-5xl">
             <div class="flex flex-col md:flex-row items-center gap-16">
-                <div class="md:w-1/3">
-                    <div class="w-64 h-64 bg-slate-200 rounded-2xl overflow-hidden shadow-inner">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" alt="Sabrina Fernandez" class="w-full h-full object-cover grayscale">
-                    </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <span class="font-playfair text-gold inline-block" style="font-size: 80pt; line-height: 1;">MLG</span>
                 </div>
                 <div class="md:w-2/3">
-                    <h2 class="text-3xl font-bold mb-6 italic">"Legal shouldn't be the bottleneck for your dreams in Mexico."</h2>
-                    <p class="text-slate-600 mb-6 text-lg leading-relaxed">
+                    <h2 class="text-3xl font-bold mb-6 italic text-white">"Legal shouldn't be the bottleneck for your dreams in Mexico."</h2>
+                    <p class="text-slate-400 mb-6 text-lg leading-relaxed">
                         I'm Sabrina Fernandez, a corporate lawyer based in Mexico. Over the last 10 years, I've seen countless brilliant entrepreneurs and expats struggle with the same bureaucratic hurdles.
                     </p>
-                    <p class="text-slate-600 mb-8 text-lg leading-relaxed">
+                    <p class="text-slate-400 mb-8 text-lg leading-relaxed">
                         I created Mexico Legal Guide to democratize access to clear, actionable legal information. These guides are the roadmaps I wish I could give every client before our first consultation.
                     </p>
                     <div class="flex gap-4">
-                        <a href="https://www.linkedin.com/in/sabrina-fern%C3%A1ndez-rico-561806b9/" target="_blank" class="text-slate-400 hover:text-blue-600 transition">LinkedIn</a>
-                        <a href="https://www.instagram.com/mexicolegalguide" target="_blank" class="text-slate-400 hover:text-blue-600 transition">Instagram</a>
+                        <a href="https://www.linkedin.com/in/sabrina-fern%C3%A1ndez-rico-561806b9/" target="_blank" class="text-slate-400 hover:text-gold transition font-semibold">LinkedIn</a>
+                        <a href="https://www.instagram.com/mexicolegalguide" target="_blank" class="text-slate-400 hover:text-gold transition font-semibold">Instagram</a>
                     </div>
                 </div>
             </div>
@@ -253,21 +264,21 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-white py-16">
+    <footer class="bg-[#0b1730] text-white py-16 relative z-10 border-t border-[#1a2d50]">
         <div class="container mx-auto px-4 text-center">
             <div class="flex items-center justify-center gap-2 mb-8">
                 <span class="text-2xl">🇲🇽</span>
-                <span class="text-xl font-bold tracking-tight">Mexico Legal Guide</span>
+                <span class="text-xl font-bold tracking-tight text-gold">Mexico Legal Guide</span>
             </div>
             <p class="text-slate-500 max-w-lg mx-auto mb-10">
                 Practice-oriented digital guides for founders and expats. Not legal advice, but the legal knowledge you need.
             </p>
             <div class="flex justify-center gap-8 mb-10 text-slate-400 font-semibold">
-                <a href="#guides" class="hover:text-white transition">Guides</a>
-                <a href="#bundles" class="hover:text-white transition">Bundles</a>
-                <a href="#newsletter" class="hover:text-white transition">Free Checklist</a>
+                <a href="#guides" class="hover:text-gold transition">Guides</a>
+                <a href="#bundles" class="hover:text-gold transition">Bundles</a>
+                <a href="#newsletter" class="hover:text-gold transition">Free Checklist</a>
             </div>
-            <div class="border-t border-slate-800 pt-10 text-slate-600 text-sm">
+            <div class="border-t border-[#1a2d50] pt-10 text-slate-600 text-sm">
                 &copy; 2024 Mexico Legal Guide. All rights reserved.
             </div>
         </div>
