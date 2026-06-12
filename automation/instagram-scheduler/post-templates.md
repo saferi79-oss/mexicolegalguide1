@@ -1,33 +1,63 @@
-# Instagram Post Templates (Copy & Paste)
+# Instagram Post Templates — Mexico Legal Guide
 
-## Reel: Startup Mistakes
-**Visual:** Quick cuts of Sabrina pointing at text bubbles.
-**Caption:**
-Starting a business in Mexico? 🇲🇽 Don't let these 3 common mistakes kill your momentum before you even start.
-1. Choosing the wrong corporate structure.
-2. Ignoring IP protection until it's too late.
-3. Not having proper labor contracts.
-Comment **"STARTUP"** and I'll send you the link to my complete Founder's Guide! 🚀
-#MexicoLegal #StartupMexico #Entrepreneurship
+## 🎨 Estilo Visual (Consistente)
+- **Fondo:** Azul Marino #0F1E3A (Primario) o Blanco (Solo para contraste alto)
+- **Tipografía:** Playfair Display (Títulos) + Inter (Cuerpo)
+- **Colores:** Dorado #C9A84C (Acentos y Títulos) + Blanco #FFFFFF (Cuerpo)
+- **Logo:** MLG en dorado (esquina superior o slide final)
+- **Estilo:** Minimalista, elegante, bilingüe.
 
 ---
 
-## Carousel: Company Setup
-**Slide 1:** Step-by-Step: Forming your Mexican S.A. de C.V.
-**Slide 2:** Step 1: Name authorization (SRE).
-**Slide 3:** Step 2: Notary public and Bylaws.
-**Slide 4:** Step 3: Tax ID (SAT).
-**Slide 5:** Save this post if you're planning to incorporate this year!
-**Caption:**
-Incorporating in Mexico doesn't have to be a nightmare. Here is the high-level roadmap. 🗺️
-Want the deep dive? Comment **"SETUP"** to get my guide on Establishing Your Company in Mexico.
-#BusinessMexico #MexicoLawyer #CompanyFormation
+## 🇪🇸/🇬🇧 Plantilla General Bilingüe
+**Formato:** Carrusel 4-7 slides
+**Visual:** Fondo Navy, Títulos en Dorado, Texto en Blanco.
+
+### Slide 1 (Portada)
+- **Título (Gold):** Título impactante en Español
+- **Subtítulo (White):** Catchy Title in English
+- **Visual:** Icono/Emoji grande relacionado (⚖️, 🏛️, 📋)
+
+### Slides de Contenido (2-N)
+- **Encabezado (Gold):** Concepto Clave | Key Concept
+- **Cuerpo (White):** 
+  - Explicación breve en español.
+  - Brief explanation in English.
+- **Visual:** Separador dorado fino entre idiomas o secciones.
+
+### Slide Final (CTA)
+- **Call to Action (Gold):** 
+  - Comenta "[KEYWORD]" para la guía.
+  - Comment "[KEYWORD]" for the guide.
+- **Branding:** Logo MLG en dorado.
 
 ---
 
-## Reel: Hiring Law
-**Visual:** Sabrina at a desk with a "Contract" prop.
+## 📝 Ejemplo de Captions (Bilingües)
+
+### Lunes — Errores Legales
 **Caption:**
-Mexican labor law is extremely protective of the employee. 🛡️ If you hire without a solid contract, you are exposing yourself to massive litigation risks.
-Get it right from the start. Comment **"HIRING"** for my Contract Guide for SMEs.
-#HiringMexico #HRMexico #LegalTips
+🇪🇸 Emprender en México es un reto emocionante, pero 3 errores legales pueden detenerte antes de empezar.
+🇬🇧 Starting a business in Mexico is exciting, but 3 legal mistakes can stop you before you even begin.
+
+1️⃣ Estructura incorrecta | Wrong structure
+2️⃣ Ignorar PI | Ignoring IP
+3️⃣ Sin contratos | No formal contracts
+
+👉 Comenta **"ERRORES"** y te envío el link a la guía completa.
+👉 Comment **"ERRORES"** and I'll send you the link to the full guide.
+
+#MexicoLegal #StartupsMX #LegalMistakes #EmprenderEnMexico #FounderTips
+
+### Viernes — Contratación
+**Caption:**
+🇪🇸 Contratar correctamente es proteger tu inversión. No dejes cabos sueltos con tu equipo.
+🇬🇧 Hiring correctly means protecting your investment. Don't leave loose ends with your team.
+
+✅ Contratos por escrito | Written contracts
+✅ Beneficios de ley | Mandatory benefits
+
+👉 Comenta **"HIRING"** para recibir el checklist de contratación.
+👉 Comment **"HIRING"** to receive the hiring checklist.
+
+#HiringMexico #Contratacion #LaborLawMX #MexicoBusiness #WorkInMexico

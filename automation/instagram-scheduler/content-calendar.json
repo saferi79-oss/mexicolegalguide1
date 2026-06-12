@@ -1,51 +1,127 @@
 {
+  "brand": {
+    "name": "Mexico Legal Guide",
+    "founder": "Sabrina Fernandez",
+    "tagline": "Your legal guide to doing business in Mexico",
+    "colors": {
+      "navy": "#0F1E3A",
+      "gold": "#C9A84C",
+      "white": "#FFFFFF",
+      "dark_text": "#0F1E3A"
+    },
+    "font": "Playfair Display (serif) + Inter (body)",
+    "logo": "MLG in gold",
+    "posting_style": "Daily carousels, bilingual (ES/EN), educational legal content"
+  },
   "weekly_plan": [
     {
       "day": "Monday",
-      "format": "Reel",
-      "topic": "3 Legal Mistakes Startups Make in Mexico",
-      "keyword": "STARTUP",
-      "cta": "Comment 'STARTUP' for my full guide on how to avoid these!"
+      "format": "Carousel (5 slides)",
+      "language": "ES/EN",
+      "topic": "❌ 3 errores legales que matan startups | 3 Legal Mistakes",
+      "keyword": "ERRORES",
+      "slides": [
+        "Cover: '3 errores legales que matan tu startup | 3 Legal Mistakes Killing Your Startup' (Navy + Gold)",
+        "01: Elegir estructura incorrecta | Wrong legal structure (S.A. vs S.A.S.)",
+        "02: Ignorar PI | Ignoring Intellectual Property",
+        "03: Sin contratos formales | No formal labor contracts",
+        "👇 Comenta 'ERRORES' | Comment 'ERRORES' for the full guide"
+      ],
+      "cta": "Comenta 'ERRORES' | Comment 'ERRORES' for the guide →",
+      "guide_link": "https://mexicolegalguide.gumroad.com/l/pnfxjgg"
     },
     {
       "day": "Tuesday",
-      "format": "Story",
-      "topic": "Why Mexican IP law is different",
-      "keyword": "IP",
-      "cta": "Swipe up or DM 'IP' for the Intellectual Property guide."
+      "format": "Carousel (4 slides)",
+      "language": "ES/EN",
+      "topic": "🏛️ S.A. de C.V. vs S.A.S. - ¿Cuál elegir? | Which one to choose?",
+      "keyword": "STRUCTURE",
+      "slides": [
+        "Cover: 'S.A. de C.V. vs S.A.S. — Which one is right for you?'",
+        "S.A. de C.V.: Inversionistas y capital extranjero | Investors & foreign capital",
+        "S.A.S.: Solopreneurs y negocios digitales | Solopreneurs & digital business",
+        "💬 Comenta 'STRUCTURE' | Comment 'STRUCTURE' for my guide"
+      ],
+      "cta": "Comment 'STRUCTURE' for the full Company Guide →",
+      "guide_link": "https://mexicolegalguide.gumroad.com/l/jakfxl"
     },
     {
       "day": "Wednesday",
-      "format": "Carousel",
-      "topic": "Checklist for Company Formation",
-      "keyword": "SETUP",
-      "cta": "Get the checklist link in bio or comment 'SETUP'."
+      "format": "Carousel (5 slides)",
+      "language": "ES/EN",
+      "topic": "📋 Checklist: Constituye tu empresa | Incorporate your business",
+      "keyword": "EMPRESA",
+      "slides": [
+        "Cover: 'Checklist: Constituye tu empresa | Incorporate your business'",
+        "1. Reserva de nombre | Name reservation (SRE)",
+        "2. Acta constitutiva | Incorporation deed (Notary)",
+        "3. RFC | Tax ID (SAT)",
+        "Comenta 'EMPRESA' | Comment 'EMPRESA' for the step-by-step guide"
+      ],
+      "cta": "Comenta 'EMPRESA' | Comment 'EMPRESA' for the guide →",
+      "guide_link": "https://mexicolegalguide.gumroad.com/l/jakfxl"
     },
     {
       "day": "Thursday",
-      "format": "Story",
-      "topic": "Client Success Story (Fiverr testimonial)",
-      "cta": "Check our services on Fiverr (Link in Bio)."
+      "format": "Carousel (4 slides)",
+      "language": "ES/EN",
+      "topic": "⚖️ Propiedad Intelectual | Intellectual Property",
+      "keyword": "IP",
+      "slides": [
+        "Cover: 'Protege tu marca en México | Protect Your Brand in Mexico'",
+        "Marcas: Protege tu nombre y logo | Trademarks: Protect name & logo",
+        "Copyright: Software y contenido | Software & content protection",
+        "👉 Comenta 'IP' | Comment 'IP' for the complete IP Guide"
+      ],
+      "cta": "Comment 'IP' for the full Intellectual Property Guide →",
+      "guide_link": "https://mexicolegalguide.gumroad.com/l/xatoic"
     },
     {
       "day": "Friday",
-      "format": "Reel",
-      "topic": "Hiring your first employee? Read this.",
+      "format": "Carousel (5 slides)",
+      "language": "ES/EN",
+      "topic": "📄 Contrata correctamente | How to Hire in Mexico",
       "keyword": "HIRING",
-      "cta": "Comment 'HIRING' for the employment contract guide."
+      "slides": [
+        "Cover: 'Contratar en México | Hiring in Mexico'",
+        "Contrato por escrito es obligatorio | Written contracts are mandatory",
+        "LFT: Beneficios de ley | Mandatory benefits (IMSS, Aguinaldo)",
+        "Freelancers vs Empleados | Freelancers vs Employees",
+        "Comenta 'HIRING' | Comment 'HIRING' for the guide"
+      ],
+      "cta": "Comment 'HIRING' for the Contract Guide →",
+      "guide_link": "https://mexicolegalguide.gumroad.com/l/sdbag"
     },
     {
       "day": "Saturday",
-      "format": "Story",
-      "topic": "Q&A Session",
-      "cta": "Ask me anything about Mexico Law."
+      "format": "Carousel (3 slides)",
+      "language": "ES/EN",
+      "topic": "✨ ¿Abogado o Guía? | Lawyer or Guide?",
+      "keyword": "TIP",
+      "slides": [
+        "Cover: '¿Abogado o guía legal? | Lawyer or Legal Guide?'",
+        "Guía: Educación y preparación | Guide: Education & prep (Lower cost)",
+        "Abogado: Caso específico y litigio | Lawyer: Specific case & litigation",
+        "Link in bio para ver las guías | Link in bio for guides"
+      ],
+      "cta": "Link in bio para ver las guías | Link in bio for guides →",
+      "guide_link": "https://mexicolegalguide.carrd.co"
     },
     {
       "day": "Sunday",
-      "format": "Static",
-      "topic": "The 'Digital Nomad' Guide Preview",
-      "keyword": "CHECKLIST",
-      "cta": "Comment 'CHECKLIST' for the residency legal requirements PDF."
+      "format": "Carousel (4 slides)",
+      "language": "ES/EN",
+      "topic": "📌 Monthly Legal Reset | Reset Legal Mensual",
+      "keyword": "COMPLIANCE",
+      "slides": [
+        "Cover: 'Monthly Legal Reset | Reset Legal Mensual'",
+        "☑️ Fechas SAT | Tax deadlines",
+        "☑️ Contratos laborales | Employee contracts",
+        "☑️ Libros corporativos | Corporate books",
+        "Comment 'COMPLIANCE' for the SME Guide"
+      ],
+      "cta": "Comment 'COMPLIANCE' for the Compliance Guide →",
+      "guide_link": "https://mexicolegalguide.gumroad.com/l/bplbkc"
     }
   ]
 }
