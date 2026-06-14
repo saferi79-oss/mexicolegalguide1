@@ -2,297 +2,506 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Mexico Residency & Visa Checklist 2024</title>
+<title>Mexico Residency & Visa Checklist 2025-2026</title>
 <style>
-  @page { margin: 0; }
-  body { 
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #222;
+  @page { margin: 0; size: letter; }
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #222;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm 18mm;
+  }
+  
+  /* HEADER */
   .header {
     background: #0F1E3A;
-    padding: 40px 50px;
-    color: white;
+    padding: 28px 30px;
+    border-radius: 6px;
     position: relative;
+    margin-bottom: 22px;
   }
   .header:after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50px;
-    right: 50px;
+    left: 30px;
+    right: 30px;
     height: 2px;
     background: #C9A84C;
   }
-  .header .logo {
-    font-family: 'Times New Roman', serif;
-    font-size: 42px;
+  .badge {
+    display: inline-block;
+    background: #C9A84C;
+    color: #0F1E3A;
+    font-size: 10px;
     font-weight: bold;
-    color: #C9A84C;
-    letter-spacing: 3px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
   }
   .header h1 {
-    font-size: 28px;
-    margin: 10px 0 5px;
+    color: white;
+    font-size: 22px;
     font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
   }
-  .header p {
+  .header .tagline {
     color: #C9A84C;
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
-    margin: 0;
   }
-  .content {
-    padding: 40px 50px;
+  
+  /* SECTIONS */
+  .phase {
+    margin-bottom: 18px;
   }
-  .section-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: #0F1E3A;
-    border-bottom: 2px solid #C9A84C;
+  .phase-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
     padding-bottom: 6px;
-    margin: 30px 0 15px;
+    border-bottom: 2px solid #C9A84C;
+  }
+  .phase-number {
+    background: #0F1E3A;
+    color: #C9A84C;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: bold;
+    flex-shrink: 0;
+  }
+  .phase-header h2 {
+    font-size: 13px;
+    color: #0F1E3A;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 800;
   }
-  .section-title.first {
-    margin-top: 0;
+  .phase-header .duration {
+    margin-left: auto;
+    font-size: 10px;
+    color: #888;
+    font-style: italic;
   }
+  
+  /* ITEMS */
   .item {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 12px;
-    padding: 10px 14px;
+    gap: 10px;
+    margin-bottom: 6px;
+    padding: 7px 10px;
     background: #F8F6F3;
     border-left: 3px solid #C9A84C;
-    border-radius: 4px;
+    border-radius: 3px;
   }
   .item .num {
     background: #0F1E3A;
     color: #C9A84C;
-    width: 24px;
-    height: 24px;
+    width: 20px; height: 20px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: bold;
-    flex-shrink: 0;
-    margin-top: 1px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: bold;
+    flex-shrink: 0; margin-top: 1px;
   }
-  .item .text {
-    flex: 1;
-  }
-  .item .text strong {
+  .item .txt strong {
     color: #0F1E3A;
     display: block;
-    margin-bottom: 2px;
+    font-size: 11px;
+    margin-bottom: 1px;
   }
-  .item .text span {
+  .item .txt span {
     color: #555;
-    font-size: 13px;
+    font-size: 10px;
   }
-  .tip {
+  .item .tag {
+    display: inline-block;
+    background: #C9A84C;
+    color: #0F1E3A;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 8px;
+    margin-left: 4px;
+    text-transform: uppercase;
+  }
+
+  /* WARNING BOX */
+  .warning {
+    background: #FFF8E1;
+    border: 1px solid #C9A84C;
+    border-left: 4px solid #C9A84C;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 10px;
+    color: #333;
+  }
+  .warning strong { color: #0F1E3A; }
+
+  .tip-box {
     background: #0F1E3A;
     color: #C9A84C;
-    padding: 16px 20px;
-    border-radius: 6px;
-    margin: 20px 0;
-    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 10px;
     text-align: center;
     font-style: italic;
+    line-height: 1.5;
   }
-  .footer {
-    text-align: center;
-    padding: 30px 50px;
-    border-top: 1px solid #ddd;
-    color: #999;
+
+  /* QUICK CHECKLIST */
+  .checklist-title {
     font-size: 12px;
+    font-weight: 700;
+    color: #0F1E3A;
+    margin: 16px 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
-  .footer .mlg {
-    font-family: 'Times New Roman', serif;
-    font-size: 20px;
-    color: #C9A84C;
-    font-weight: bold;
-  }
-  .checkbox-line {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
-    padding: 6px 10px;
-  }
-  .checkbox-line .box {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #0F1E3A;
-    border-radius: 3px;
-    flex-shrink: 0;
-  }
-  .checkbox-line .label {
-    font-size: 13px;
+  .check-row {
+    display: flex; align-items: center;
+    gap: 7px; margin-bottom: 4px;
+    padding: 2px 6px;
+    font-size: 10px;
     color: #444;
   }
+  .check-row .box {
+    width: 14px; height: 14px;
+    border: 2px solid #0F1E3A;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 9px;
+    color: #888;
+  }
+  .footer .mlg { font-size: 14px; color: #C9A84C; font-weight: bold; letter-spacing: 2px; }
+  .footer .name { color: #555; font-size: 10px; margin-top: 2px; }
 </style>
 </head>
 <body>
+<div class="page">
 
 <div class="header">
-  <div class="logo">MLG</div>
-  <h1>Mexico Residency & Visa Checklist</h1>
-  <p>Your practical guide to navigating the Mexican immigration system</p>
+  <div class="badge">Updated 2025-2026</div>
+  <h1>The Ultimate Mexico Residency &amp; Visa Checklist</h1>
+  <div class="tagline">Temporary &amp; Permanent Residency — From Consulate Application to INM Canje</div>
 </div>
 
-<div class="content">
+<div class="warning">
+  <strong>⚠️ IMPORTANT:</strong> Financial requirements for Mexican residency are updated annually (January) based on UMA. 
+  <strong>2025 UMA:</strong> ~$113.14 MXN/day (~$3,442 MXN/month). <strong>Temporary Residency (2025):</strong> Minimum ~$46,000–$49,000 MXN/month income 
+  OR ~$570,000–$600,000 MXN in savings/investments. <strong>Permanent Residency:</strong> ~$172,000–$180,000 MXN/month income 
+  OR ~$2,300,000–$2,400,000 MXN in savings. <em>Verify current figures at your consulate before applying.</em>
+</div>
 
-  <div class="tip">
-    ⚖️ Use this checklist before, during, and after your consulate appointment.
-    Keep all documents organized in a folder — digital and physical.
+<!-- ===== PHASE 1 ===== -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">1</div>
+    <h2>Pre-Application — Document Preparation</h2>
+    <div class="duration">4–8 weeks before appointment</div>
   </div>
-
-  <!-- PHASE 1 -->
-  <div class="section-title first">Phase 1 — Pre-Application (at the Consulate)</div>
 
   <div class="item">
     <div class="num">1</div>
-    <div class="text">
-      <strong>Financial Solvency Check</strong>
-      <span>Do you meet the current monthly income or savings requirements for Temporary or Permanent Residency? As of 2024, minimum monthly income is ~$5,000 MXN (temp) or higher for permanent.</span>
+    <div class="txt">
+      <strong>Determine Your Visa Type <span class="tag">Critical</span></strong>
+      <span>Temporary Residency (1-4 years, renewable) vs Permanent Residency (indefinite). Based on financial solvency, family ties, or job offer. Different requirements for each.</span>
     </div>
   </div>
-
   <div class="item">
     <div class="num">2</div>
-    <div class="text">
-      <strong>Passport Validity</strong>
-      <span>Ensure your passport has at least 6 months of remaining validity and at least 2 blank pages.</span>
+    <div class="txt">
+      <strong>Calculate Financial Solvency <span class="tag">Critical</span></strong>
+      <span>Verify you meet 2025 UMA-based requirements. Option A: Monthly income (last 6-12 months). Option B: Savings/investments (last 12 months). Option C: Combined. Use official INM calculator.</span>
     </div>
   </div>
-
   <div class="item">
     <div class="num">3</div>
-    <div class="text">
-      <strong>Application Form</strong>
-      <span>Download and complete the official consulate application form. Print single-sided only — some consulates reject double-sided printouts.</span>
+    <div class="txt">
+      <strong>Passport Check</strong>
+      <span>Minimum 6 months validity REMAINING after visa issuance. At least 2 blank pages. If expiring soon, renew BEFORE applying — consulates won't issue visa into a short-validity passport.</span>
     </div>
   </div>
-
   <div class="item">
     <div class="num">4</div>
-    <div class="text">
-      <strong>Passport Photos</strong>
-      <span>Specific requirements: star-eye distance, white background, no glasses, no smiling. Get 4-6 photos to be safe.</span>
+    <div class="txt">
+      <strong>Bank Statements — The Right Way <span class="tag">Common Error</span></strong>
+      <span>Provide 6-12 months of statements. Must show consistent balance meeting requirements. Notarized/stamped by bank. Some consulates require apostilled documents. Digital printouts often rejected.</span>
     </div>
   </div>
-
   <div class="item">
     <div class="num">5</div>
-    <div class="text">
-      <strong>Proof of Income</strong>
-      <span>6-12 months of bank statements, pay stubs, or investment statements. Must be stamped or have QR code if required by your specific consulate. Some consulates require apostilled documents.</span>
+    <div class="txt">
+      <strong>Proof of Income Documents</strong>
+      <span>Pay stubs, tax returns (last 2 years), employment letter with salary (Spanish translation may be required), pension/investment statements. Self-employed: tax returns + client contracts + bank statements.</span>
     </div>
   </div>
-
-  <!-- PHASE 2 -->
-  <div class="section-title">Phase 2 — The Interview</div>
-
   <div class="item">
     <div class="num">6</div>
-    <div class="text">
-      <strong>Consulate Appointment</strong>
-      <span>Use the "MiConsulado" online booking system. Book early — appointments fill up 2-4 weeks in advance. Bring your printed confirmation.</span>
+    <div class="txt">
+      <strong>Application Form (Formato Único)</strong>
+      <span>Download from your consulate's website. Fill online then print. Single-sided ONLY. Black ink. Don't sign until asked. Bring a blank copy as backup.</span>
     </div>
   </div>
-
   <div class="item">
     <div class="num">7</div>
-    <div class="text">
-      <strong>Interview Preparation</strong>
-      <span>Be ready to explain why you want to live in Mexico. Do NOT say you plan to work locally on a tourist visa. Focus on lifestyle, retirement, or remote work. Dress professionally.</span>
+    <div class="txt">
+      <strong>Passport Photos</strong>
+      <span>Specifications: 39mm wide x 49mm tall, white background, neutral expression, no glasses, visible ears. Get 6-8 copies. Some consulates are very strict — don't use a phone photo booth.</span>
     </div>
   </div>
-
   <div class="item">
     <div class="num">8</div>
-    <div class="text">
-      <strong>The Visa Sticker</strong>
-      <span>If approved, verify the 180-day validity of your visa sticker. Check that your name is spelled correctly before leaving the consulate.</span>
+    <div class="txt">
+      <strong>Proof of Address</strong>
+      <span>Utility bill, bank statement, or rental contract from YOUR COUNTRY of residence (not Mexico). Must match the consulate jurisdiction. Recent (last 3 months).</span>
     </div>
   </div>
-
-  <!-- PHASE 3 -->
-  <div class="section-title">Phase 3 — The "Canje" (In Mexico)</div>
-
   <div class="item">
     <div class="num">9</div>
-    <div class="text">
-      <strong>FMM / Entry Port</strong>
-      <span>Ensure your immigration officer marks your entry as "Canje" (30 days), not "Turismo" (180 days). This is one of the most common mistakes at the airport! Show them your visa sticker and say "Canje."</span>
+    <div class="txt">
+      <strong>Criminal Record Check <span class="tag">If Required</span></strong>
+      <span>Some consulates require apostilled federal background check from your country. This can take 4-8 weeks. Check with YOUR specific consulate BEFORE applying.</span>
     </div>
+  </div>
+  <div class="item">
+    <div class="num">10</div>
+    <div class="txt">
+      <strong>Additional Documents Checklist</strong>
+      <span>Birth certificate (apostilled if married/including dependents). Marriage certificate if applicable. Children's birth certificates. Passport copies of all dependents. Everything should be recent (less than 6 months old).</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PHASE 2 ===== -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">2</div>
+    <h2>Consulate Appointment &amp; Interview</h2>
+    <div class="duration">The big day</div>
   </div>
 
   <div class="item">
-    <div class="num">10</div>
-    <div class="text">
-      <strong>INM Appointment</strong>
-      <span>Complete the process at the National Institute of Migration (INM) within 30 days of arrival to get your physical Temporary Resident ID card (tarjeta). Bring: passport, visa, FMM, proof of address, fee payment receipt.</span>
+    <div class="num">11</div>
+    <div class="txt">
+      <strong>Book Your Appointment <span class="tag">Critical</span></strong>
+      <span>Use the "MiConsulado" online system (book at your assigned consulate based on your address). Appointments fill 2-4 weeks ahead — check daily for cancellations. Some open slots at midnight local time.</span>
     </div>
   </div>
-
-  <div class="tip">
-    ✨ Pro tip: Make a photocopy of every document before your appointment. 
-    INM offices often have limited hours in smaller cities — book early.
+  <div class="item">
+    <div class="num">12</div>
+    <div class="txt">
+      <strong>Pay Consular Fees</strong>
+      <span>Fees vary by consulate and visa type. Typically $30-$50 USD for application, plus visa issuance fee (~$300-$400 USD for temporary residency). Pay ONLINE before your appointment when possible. Bring receipt.</span>
+    </div>
   </div>
-
-  <!-- Quick reference -->
-  <div class="section-title">Quick Reference — Required Documents</div>
-
-  <div class="checkbox-line">
-    <div class="box"></div>
-    <div class="label">Passport (valid 6+ months)</div>
+  <div class="item">
+    <div class="num">13</div>
+    <div class="txt">
+      <strong>Prepare Your Narrative <span class="tag">Common Error</span></strong>
+      <span>Be ready to explain: Why Mexico? (lifestyle, remote work, retirement, family). How you'll support yourself. DO NOT say you plan to work for a Mexican company without proper work authorization. DO mention remote work for foreign companies.</span>
+    </div>
   </div>
-  <div class="checkbox-line">
-    <div class="box"></div>
-    <div class="label">Application form (printed single-sided)</div>
+  <div class="item">
+    <div class="num">14</div>
+    <div class="txt">
+      <strong>What to Bring to the Interview</strong>
+      <span>Original + 2 copies of EVERY document. Appointment confirmation printout. Fee payment receipt. Pen. Water. Phone fully charged (for digital documents). Folder organized by tabs.</span>
+    </div>
   </div>
-  <div class="checkbox-line">
-    <div class="box"></div>
-    <div class="label">Passport photos (4-6 copies)</div>
+  <div class="item">
+    <div class="num">15</div>
+    <div class="txt">
+      <strong>The Interview</strong>
+      <span>Dress professionally. Be polite and concise. Answer ONLY what's asked. Don't volunteer extra information. Speak clearly. The officer has already reviewed your documents — they're verifying consistency, not testing you.</span>
+    </div>
   </div>
-  <div class="checkbox-line">
-    <div class="box"></div>
-    <div class="label">Bank statements (6-12 months)</div>
+  <div class="item">
+    <div class="num">16</div>
+    <div class="txt">
+      <strong>If Approved — Check Your Visa Sticker</strong>
+      <span>Verify: Name spelling matches passport exactly. Visa type (Temporal vs Permanente). 180-day validity window. BEFORE leaving the window, point out ANY errors.</span>
+    </div>
   </div>
-  <div class="checkbox-line">
-    <div class="box"></div>
-    <div class="label">Proof of income / employment letter</div>
-  </div>
-  <div class="checkbox-line">
-    <div class="box"></div>
-    <div class="label">Consulate appointment confirmation</div>
-  </div>
-  <div class="checkbox-line">
-    <div class="box"></div>
-    <div class="label">Fee payment receipt</div>
-  </div>
-  <div class="checkbox-line">
-    <div class="box"></div>
-    <div class="label">Proof of address in Mexico (for INM)</div>
-  </div>
-
 </div>
+
+<!-- ===== PHASE 3 ===== -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">3</div>
+    <h2>Travel &amp; Entry to Mexico</h2>
+    <div class="duration">Within 180 days of visa issuance</div>
+  </div>
+
+  <div class="item">
+    <div class="num">17</div>
+    <div class="txt">
+      <strong>Book Your Flight</strong>
+      <span>Must enter Mexico within 180 days of visa sticker date. Enter through ANY international airport or land border. Keep visa sticker intact — don't let anyone peel it off.</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="num">18</div>
+    <div class="txt">
+      <strong>At Immigration — THE CRITICAL MOMENT <span class="tag">Most Common Mistake</span></strong>
+      <span>Show your passport with visa sticker to the immigration officer. Say clearly: "CANJE" (not "turismo"). Ensure they stamp your FMM as "Canje — 30 días." If they stamp "Turismo — 180 días" your visa is effectively wasted and you'll need to leave and re-enter.</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="num">19</div>
+    <div class="txt">
+      <strong>Verify Your FMM</strong>
+      <span>After immigration: Check that the FMM form says "Canje" and "30 días." Keep the FMM copy safe — you'll need it at INM. If they made a mistake, ask to speak with a supervisor before leaving the airport.</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PHASE 4 ===== -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">4</div>
+    <h2>The Canje — INM Appointment (Within Mexico)</h2>
+    <div class="duration">Within 30 days of arrival</div>
+  </div>
+
+  <div class="item">
+    <div class="num">20</div>
+    <div class="txt">
+      <strong>Book INM Appointment Online <span class="tag">Critical</span></strong>
+      <span>Use the INM appointment system (citas.inm.gob.mx). Select "Canje de canje/Canje de visa." Slots fill fast — book immediately after arriving. Choose an office convenient but not overloaded (smaller cities often have same-week availability).</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="num">21</div>
+    <div class="txt">
+      <strong>Pay INM Fees</strong>
+      <span>Fee for Temporary Resident card (tarjeta) is approximately $6,000–$10,000 MXN (varies annually). Pay at the bank with the reference number provided in your appointment confirmation. Bring the original receipt.</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="num">22</div>
+    <div class="txt">
+      <strong>INM Appointment — Documents to Bring</strong>
+      <span>
+        • Passport (original + copy of all pages)<br>
+        • Visa sticker copy<br>
+        • FMM form (original)<br>
+        • Fee payment receipt (original)<br>
+        • Proof of address in Mexico (utility bill, lease, or hotel receipt with your name)<br>
+        • Appointment confirmation printout<br>
+        • 2 passport photos (same specs as before)
+      </span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="num">23</div>
+    <div class="txt">
+      <strong>The INM Interview</strong>
+      <span>Brief and procedural. They'll take your photo and fingerprints. Your temporary resident card will be mailed to your address within 1-2 weeks, OR issued same-day in some offices. Verify all personal data on the card.</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PHASE 5 ===== -->
+<div class="phase">
+  <div class="phase-header">
+    <div class="phase-number">5</div>
+    <h2>After You Get Your Card — Next Steps</h2>
+    <div class="duration">First 30 days</div>
+  </div>
+
+  <div class="item">
+    <div class="num">24</div>
+    <div class="txt">
+      <strong>Get Your CURP</strong>
+      <span>Your Clave Única de Registro de Población (CURP) is essential for everything: banking, SIM cards, contracts, tax ID. Get it online at gob.mx/curp with your resident card number, or at any RENAPO office.</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="num">25</div>
+    <div class="txt">
+      <strong>Open a Mexican Bank Account</strong>
+      <span>You'll need your passport, resident card, CURP, and proof of address. BBVA, Banorte, and HSBC are foreigner-friendly. Some allow account opening with just passport + CURP + proof of address.</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="num">26</div>
+    <div class="txt">
+      <strong>Register with SAT (Tax ID)</strong>
+      <span>Your RFC (Registro Federal de Contribuyentes) is needed for any business activity, invoicing, or tax compliance. Register as "residente temporal" with your CURP and resident card. Get a tax advisor — Mexican tax rules for residents are complex.</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="num">27</div>
+    <div class="txt">
+      <strong>Healthcare Options</strong>
+      <span>As a temporary resident, you can register with IMSS (health insurance) voluntarily. Cost: ~$6000-8000 MXN/year (varies). Private international health insurance is also recommended and often required for residency renewal.</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="num">28</div>
+    <div class="txt">
+      <strong>Renewal Calendar <span class="tag">Important</span></strong>
+      <span>Temporary residency: valid 1 year initially. Renew before expiry. After 4 consecutive years, you can apply for Permanent Residency. Permanent = indefinite, no renewal needed. Set calendar reminders 3 months before each expiry.</span>
+    </div>
+  </div>
+</div>
+
+<div class="tip-box">
+  ⚡ Final pro tip: Join Facebook expat groups for your city (CDMX Expats, Lake Chapala Expats, etc.). 
+  They share real experiences about local INM offices, document requirements, and common pitfalls. 
+  Immigration policies change — always verify requirements with your consulate or an immigration attorney.
+</div>
+
+<!-- QUICK CHECKLIST -->
+<div class="checklist-title">☐ ULTIMATE DOCUMENT CHECKLIST — Print this page</div>
+
+<div class="check-row"><div class="box"></div> Passport (valid 6+ months after visa issuance)</div>
+<div class="check-row"><div class="box"></div> Application form (Formato Único — single-sided print)</div>
+<div class="check-row"><div class="box"></div> Passport photos (6-8 copies, 39x49mm)</div>
+<div class="check-row"><div class="box"></div> Bank statements (6-12 months, stamped/apostilled)</div>
+<div class="check-row"><div class="box"></div> Proof of income / employment letter / tax returns</div>
+<div class="check-row"><div class="box"></div> Savings/investment statements (if using solvency option)</div>
+<div class="check-row"><div class="box"></div> Proof of address in home country (utility bill)</div>
+<div class="check-row"><div class="box"></div> Birth certificate (apostilled if bringing dependents)</div>
+<div class="check-row"><div class="box"></div> Marriage certificate (if applicable, apostilled)</div>
+<div class="check-row"><div class="box"></div> Criminal record check (if required by your consulate)</div>
+<div class="check-row"><div class="box"></div> Consular/Visa fee payment receipts</div>
+<div class="check-row"><div class="box"></div> Appointment confirmation printouts (consulate + INM)</div>
+<div class="check-row"><div class="box"></div> INM fee payment receipt (bank payment, ~$6-10K MXN)</div>
+<div class="check-row"><div class="box"></div> Proof of address in Mexico (utility bill, lease)</div>
+<div class="check-row"><div class="box"></div> Copies of everything (2 full sets + digital backups)</div>
 
 <div class="footer">
   <div class="mlg">MLG — Mexico Legal Guide</div>
-  <div style="margin-top:6px;">Sabrina Fernandez · Corporate Lawyer</div>
-  <div style="margin-top:4px;">Not legal advice. Educational resource for informational purposes only.</div>
-  <div style="margin-top:2px;">mexicolegalguide.carrd.co · @mexicolegalguide</div>
+  <div class="name">Sabrina Fernandez · Corporate Lawyer · @mexicolegalguide</div>
+  <div style="margin-top:2px;">This is an educational resource. Verify all requirements with your consulate or a licensed immigration attorney before applying.</div>
+  <div style="margin-top:1px;">UMA figures and fees updated for 2025. Check gob.mx for latest UMA values and INM fee schedules.</div>
 </div>
 
+</div>
 </body>
 </html>
